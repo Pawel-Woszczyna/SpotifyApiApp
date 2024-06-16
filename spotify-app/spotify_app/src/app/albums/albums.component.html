@@ -1,0 +1,10 @@
+<div class="container">
+    <mat-card class="example-card">
+        <b>Album Tracks:</b>
+        <mat-card-header *ngFor="let item of arrOfAlbums; index as i">
+            <p class="number-of-tracks">{{i+1}}</p>
+            <p class="artists-name">{{item.name}}</p> 
+            <p class="track-duration">{{item.duration_ms | date: 'mm:ss'}}</p> 
+        </mat-card-header>
+    </mat-card>        
+</div>

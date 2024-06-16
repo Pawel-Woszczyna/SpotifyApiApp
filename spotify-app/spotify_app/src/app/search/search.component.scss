@@ -1,0 +1,254 @@
+@use "../player/player.component";
+
+.artists{
+    color: white;
+    font-size: x-large;
+    width: 45%;
+    min-width: 250px;
+    display: flex;
+    flex-direction: column;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.main_spotify{
+    border-radius: 2rem;
+    background-color: rgb(19, 19, 19);
+    margin-right: 0.3%;
+    min-width: 99%;
+    margin-top: 2.5vh;
+    height: 95vh;
+    margin-left: 1%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    &::-webkit-scrollbar {
+        width: 0.5em;
+        height: 0.5em;
+    }
+     
+        &::-webkit-scrollbar-thumb {
+        background-color: rgb(119, 119, 119);
+        border-radius: 3px;
+     
+        &:hover {
+         background: rgba(255,255,255,.2);
+        }
+    }
+}
+
+.main-content-spotify{
+    display: flex;
+}
+
+mat-icon{
+    min-width: 8%;
+}
+
+.search-bar{
+    padding: 16px 16px 16px 16px;
+    border-radius: 1.6rem;
+    background-color: #242424;
+    display: flex;
+    flex-direction: row;
+    border: none;
+    color: white;
+}
+
+.search-bar:hover{
+    box-shadow: 3px 0px 10px -3px rgba(255,255,255,1);
+}
+
+.search-bar:focus{
+    outline: none;
+    border:2px solid white;
+}
+
+.search-bar-input{
+    max-width: 92%;
+    min-width: 92%;
+    display: flex;
+    height: 24px;
+    align-items: center;
+    background-color: #242424;
+    border: none;
+    outline: none;
+    color: white;
+}
+
+h1{
+    margin-top: 5%;
+    color: white;
+}
+
+.example-card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 1.2rem;
+    background-color: rgb(30, 30, 30);
+    min-width: 30vw;
+    max-height: 35vh;
+}
+
+.example-card:hover{
+    cursor: pointer;
+    background-color: rgb(41, 41, 41);
+}
+
+.card-header{
+    display: flex;
+    flex-direction: column;
+}
+
+.artist-image{
+    display: flex;
+    max-width: 30%;
+    min-width: 30%;
+    border-radius: 10rem;
+}
+
+.search-name{
+    color: white;
+    padding-top: 10px;
+}
+
+.search-who{
+    background-color: rgb(23, 23, 23);
+    width: min-content;
+    margin-bottom: 10px;
+    padding: 8px 8px 8px 8px;
+    border-radius: 1.2rem;
+}
+
+.tracks{
+    margin-left: 2.5%;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+}
+
+.track-card {
+    margin-top: 5%;
+    border-radius: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30vh;
+    background-color: rgb(19, 19, 19);
+    width: 150%;
+    height: 10vh;
+}
+
+.track-card:hover{
+    cursor: pointer;
+    background-color: rgb(41, 41, 41);
+}
+
+.track-header{
+    display: flex;
+    align-items: center;
+}
+
+.track-image{
+    display: flex;
+    max-width: 10%;
+    min-width: 10%;
+    justify-content: center;
+}
+
+.search-track-name{
+    color: white;
+    padding-top: 10px;
+    padding-left: 1vw;
+}
+
+
+.categories{
+    margin: 2.5%;
+    display: flex;
+}
+
+mat-grid-list{
+    padding-bottom: 0 !important;
+    display: flex;
+    grid-auto-rows: auto;
+    width: 100%;    
+}
+
+mat-grid-tile{
+    min-width: fit-content;
+    display: flex;
+    max-height: 30vh;
+    border-radius: 8px;
+}
+
+.categories-card{
+    display: flex;
+    align-items: center;
+    background-color: #242424;
+    min-width: 150px;
+    max-width: 150px;
+    max-height: 30vh;
+}
+
+.categorie-image{
+    padding: 0;
+    z-index: 1;
+    width: 80%;
+    height: 15vh;
+    position: absolute;
+}
+
+.search-name{
+    display: flex;
+    margin: 50% 0 0 0;
+    z-index: 1;
+    font-size: small;
+}
+
+.categories-card:hover{
+    background-color: rgb(101, 100, 100);
+    cursor: pointer;
+}
+
+.categories-header{
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20vh;
+    width: 79%;
+}
+
+@media screen and (max-width: 950px) {
+    .artists{
+        width: 100%;
+    }
+
+    .example-card{
+        display: flex;
+        width: 100%;
+    }
+    
+    .search-who{
+        margin-bottom: 20px;
+    }
+
+    .main-content-spotify{
+        flex-direction: column;
+    }
+    
+    .tracks{
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+    }    
+}
+
+@media screen and (max-width: 750px) {
+    .search-name{
+        margin: 25% 0 0 0;
+    }
+}

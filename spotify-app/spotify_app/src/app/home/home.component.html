@@ -1,0 +1,34 @@
+<div class="container">
+    <mat-grid-list class="playlists-home" [cols]="cols" rowHeight="14vh">
+        <mat-grid-tile class="mat-grid-tile-playlists" [colspan]="2"  *ngFor="let item of recentPlaylists;">
+            <mat-card class="mat-card-playlists" >
+                <mat-card-header class="mat-card-header-playlists" [routerLink]="['/player/playlists', item.id]">
+                    <img class="playlists-tracks-thumbnail" [src]="item.images[0].url!" alt="">
+                    <p class="artists-track-name-playlists">{{item.name}}</p> 
+                </mat-card-header>
+            </mat-card>        
+        </mat-grid-tile>
+    </mat-grid-list>
+    <mat-grid-list class="mat-grid-list" [cols]="colsAlbums">
+        <b>Your Recent Albums:</b>
+        <mat-grid-tile class="mat-grid-tile" [routerLink]="['/player/albums', item.album.id]" *ngFor="let item of recentAlbums;">
+            <mat-card class="example-card">
+                <mat-card-header class="mat-card-header">
+                    <img class="tracks-thumbnail" [src]="item.album.images[0].url!" alt="">
+                    <p class="artists-track-name">{{item.album.name}}</p> 
+                </mat-card-header>
+            </mat-card>        
+        </mat-grid-tile>
+    </mat-grid-list>    
+    <mat-grid-list class="mat-grid-list" [cols]="colsAlbums">
+        <b>Your Recent Tracks:</b>
+        <mat-grid-tile class="mat-grid-tile" [routerLink]="['/player/tracks', item.track.id]" *ngFor="let item of recentTracks;">
+            <mat-card class="example-card">
+                <mat-card-header class="mat-card-header">
+                    <img class="tracks-thumbnail" [src]="item.track.album.images[0].url!" alt="">
+                    <p class="artists-track-name">{{item.track.name}}</p> 
+                </mat-card-header>
+            </mat-card>        
+        </mat-grid-tile>
+    </mat-grid-list>     
+</div>

@@ -1,0 +1,56 @@
+.container{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    background: #000;
+}
+
+b{
+    font-size: xx-large;
+    color: white;
+}
+
+.example-form{
+    margin-top: 10%;
+    margin-bottom: 7.5%;
+    display: flex;
+    flex-direction: column;
+}
+
+mat-card-header{
+    justify-content: center;  
+}
+
+hr{
+    height: 3px;
+    background-color: white;
+    border: 1px white solid;
+    border-radius: 1.6rem;
+}
+
+.example-card {
+    min-width: 35%;
+    height: 60%;
+    background-color: #1f1f1f;
+}  
+
+mat-card-content{
+    height: 70%;
+}
+
+mat-card-footer{
+    display: flex;
+    height: 35%;
+    justify-content: center;  
+}
+
+button{
+    display: flex;
+    width: 40%;  
+    border-radius: 1.6rem;    
+}
+
+.mat-mdc-button.mat-mdc-button-base, .mat-mdc-raised-button.mat-mdc-button-base, .mat-mdc-unelevated-button.mat-mdc-button-base, .mat-mdc-outlined-button.mat-mdc-button-base{
+    height: 6vh;
+}

@@ -1,0 +1,9 @@
+<div class="container">
+    <mat-card class="example-card">
+        <b>Track:</b>
+        <mat-card-header *ngIf="tracks">
+            <p class="artists-name">{{tracks.name}}</p> 
+            <p class="track-duration">{{tracks.duration_ms | date: 'mm:ss'}}</p> 
+        </mat-card-header>
+    </mat-card>        
+</div>

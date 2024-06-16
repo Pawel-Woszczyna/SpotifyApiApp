@@ -1,0 +1,30 @@
+@use "../player/player.component";
+
+.example-card {
+    display: flex;
+    border-radius: 1.2rem;
+    background-color: rgb(30, 30, 30);
+    min-width: 25vw;
+    max-height: 70vh;
+}
+
+.example-card:hover{
+    cursor: pointer;
+    background-color: rgb(41, 41, 41);
+}
+
+mat-card-header{
+    display: flex;
+    justify-content: center;
+}
+
+mat-card-content{
+    max-height: 45vh;
+}
+
+.artists-image{
+    border-radius: 1rem;
+    display: flex;
+    width: 100%;
+    max-height: 45vh;
+}

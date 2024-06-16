@@ -1,0 +1,14 @@
+<div class="example-container">
+    <div class="main_spotify" mode="side" opened>
+        <div class="nav">
+            <a href="https://open.spotify.com/" target="_blank" class="spotify_logo_link"><img class="spotify_logo" src="assets/img/spotify.png" alt="spotify_logo"></a>
+            <a class="navbar_options" routerLink="/player/home"><mat-icon>home</mat-icon><p>Home</p></a>
+            <a class="navbar_options" routerLink="/player/search"><mat-icon>search</mat-icon><p>Search</p></a>
+            <a class="navbar_options" routerLink="/player/artists"><mat-icon>people</mat-icon><p>Artists</p></a>
+        </div>
+        <app-playlists></app-playlists>
+        <div class="Welcome" *ngIf="users">Welcome {{users.display_name}} !</div>
+        <span class="example-spacer"></span>
+        <button mat-raised-button (click)="logout()">Log out</button>
+    </div>
+</div>

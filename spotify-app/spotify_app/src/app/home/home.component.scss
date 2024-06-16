@@ -1,0 +1,199 @@
+@use "../player/player.component";
+
+.container{
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    min-height: 100vh;
+    width: 100%;
+    &::-webkit-scrollbar {
+        width: 0.5em;
+        height: 1em;
+    }
+     
+        &::-webkit-scrollbar-thumb {
+        background-color: rgb(119, 119, 119);
+        border-radius: 3px;
+     
+        &:hover {
+         background: rgba(255,255,255,.2);
+        }
+    }
+}
+
+.mat-grid-list{
+    display: flex;
+    margin: 20px 20px 20px 20px;
+    border-radius: 1.6rem;
+    background-color: rgb(19, 19, 19);
+}
+
+b{
+    margin: 10%;
+    width: 100%;
+}
+
+.playlists-home{
+    height: 40vh !important;
+    margin-bottom:30vh !important
+}
+
+.mat-card-playlists{
+    margin-top: 2.5vh;
+    width: 90%;
+    height: 10vh;
+    background-color: rgb(59, 59, 59);
+    color: white;
+    display: flex;
+    justify-content: center;
+    border-bottom-left-radius: 0.5rem;
+    border-top-left-radius: 0.5rem;
+}
+
+.mat-card-playlists:hover{
+    cursor: pointer;
+    background-color: rgb(97, 97, 97);
+    box-shadow: 4px 0px 15px 0px rgba(255,255,255,1);
+}
+
+.mat-card-header-playlists{
+    height: 10vh;
+    padding: 0;
+}
+
+b{
+    padding-left: 10px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    color: white;
+    font-size: xx-large;
+    display: flex;
+}
+
+.mat-grid-tile{
+    display: flex;
+    flex-direction: column;
+    border-radius: 1.6rem;
+}
+
+.example-card {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    color: white;
+    font-size: x-large;
+    margin:30px 20px 30px 35px;
+    display: flex;
+    border-radius: 1.2rem;
+    background-color: rgb(30, 30, 30);
+    min-width: 15vw;
+    
+    &::-webkit-scrollbar {
+        width: 0.5em;
+        height: 1em;
+    }
+     
+        &::-webkit-scrollbar-thumb {
+        background-color: rgb(119, 119, 119);
+        border-radius: 3px;
+     
+        &:hover {
+         background: rgba(255,255,255,.2);
+        }
+    }
+}
+
+.example-card:hover{
+    cursor: pointer;
+    background-color: rgb(41, 41, 41);
+    box-shadow: 3px 0px 11px -2px rgba(255,255,255,1);
+}
+
+.playlists-tracks-thumbnail{
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+    display: flex;
+    max-height: 10vh;
+    max-width: 40%;
+    min-width: 25%;
+}
+
+.number-of-tracks{
+    color: rgb(181, 180, 180);
+    margin-right: 5%;
+}   
+
+.tracks-thumbnail{
+    border-radius: 1rem;
+    display: flex;
+    width: 100%;
+    max-height: 40vh;
+    margin-left: 2.5%
+}
+
+.mat-card-header{
+    max-width: 100%;
+    margin-bottom: 1.5%;
+    padding-bottom: 1.5%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.artists-track-name{
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+}
+
+
+.artists-track-name-playlists{
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    margin-left: 2vh;
+    align-items: center;
+}
+
+mat-card-content{
+    width: 100%;
+}
+
+@media screen and (max-width: 1280px) {
+    .playlists-home{
+        margin-bottom: 40vh !important;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .playlists-home{
+        margin-bottom: 85vh !important;
+    }
+}
+
+@media screen and (max-width: 765px) {
+    .mat-card-header{
+        padding: 0;
+    }
+
+    .example-card{
+        background-color: rgb(19, 19, 19);
+        margin: 10px 10px 10px 10px;
+    }
+
+    .artists-track-name{
+        display: none;
+    }
+
+    .tracks-thumbnail{
+        width: 100%;
+        max-height: 40vh;
+        margin-bottom: 20%;
+    }    
+}
+
+@media screen and (max-width: 450px) {
+    .artists-track-name{
+        display: none;
+    }
+}

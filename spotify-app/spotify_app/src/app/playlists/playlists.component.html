@@ -1,0 +1,4 @@
+<b>Your Playlists:</b>
+<div class="container">
+    <button class="playlist_link" [routerLink]="['/player/playlists', item.id]" *ngFor="let item of arrOfPlaylists"><img class="playlistThumbnail" [src]="item.images[0].url!" alt=""><p>{{item.name}}</p></button>
+</div>

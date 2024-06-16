@@ -1,0 +1,13 @@
+<div class="container">
+    <mat-card class="main_spotify">
+        <mat-grid-list [cols]="cols">
+            <h1 class="top-artists-text">Your top artists:</h1>
+            <mat-grid-tile *ngFor="let item of arrOfArtists; index as i">
+                <mat-card-content>
+                    <div class="artists"><app-artists-grid [index]="i + 1" [name] = "item.name" [images] ="item.images[0].url!"></app-artists-grid></div>
+                </mat-card-content>        
+            </mat-grid-tile>
+          </mat-grid-list>    
+    </mat-card>
+</div>
+

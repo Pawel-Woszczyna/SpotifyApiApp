@@ -1,0 +1,22 @@
+<div class="container">
+    <mat-card class="example-card">
+        <mat-card-header>
+            <mat-card-title ><h1><b>Zaloguj się do Spotify</b></h1></mat-card-title>
+        </mat-card-header>
+        <mat-card-content><hr>
+            <form class="example-form">
+                <mat-form-field class="example-full-width">
+                  <mat-label>Adres-email</mat-label>
+                  <input matInput value="">
+                </mat-form-field>
+                <mat-form-field class="example-full-width">
+                    <mat-label>Hasło</mat-label>
+                    <input matInput type="password" value="">
+                </mat-form-field>
+              </form>
+        </mat-card-content>
+        <mat-card-footer>
+            <button mat-raised-button color="primary" (click)="login()">zaloguj się</button>
+        </mat-card-footer>    
+    </mat-card>
+</div>
