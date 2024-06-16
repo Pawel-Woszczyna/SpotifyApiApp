@@ -6,6 +6,6 @@ export const secretnClientID = { CLIENT_ID: '', CLIENT_SECRET: '' }
 
 //
 
-In the quotes you should pyt your own CLIENT_ID and CLIENT_SECRET that you can generate right here: https://developer.spotify.com/dashboard.
+In the quotes you should put your own CLIENT_ID and CLIENT_SECRET that you can generate right here: https://developer.spotify.com/dashboard.
 
 After you opened spotify dashboard you have to create an app and then go to settings where you can find CLIENT_ID and CLIENT_SECRET.
